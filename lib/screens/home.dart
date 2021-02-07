@@ -84,7 +84,7 @@ class _HomePageState extends State<HomePage> {
   final List<Map<String, Object>> _pages = [
     {
       'page': DashboardPage(),
-      'appBarTitle': 'Kodder',
+      'appBarTitle': 'Koderr Prep',
     },
     {
       'page': DiscussionsPage(),
@@ -154,7 +154,7 @@ class _HomePageState extends State<HomePage> {
                           Column(
                             children: <Widget>[
                               SizedBox(height: 20),
-                              Text('Srajan Jaiswal',
+                              Text('Welcome',
                                   style: TextStyle(
                                       fontSize: 18, fontFamily: 'Brand-Bold')),
                               SizedBox(height: 5),

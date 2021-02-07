@@ -368,7 +368,7 @@ class _SignUpPageState extends State<SignUpPage> {
                     children: <Widget>[
                       ClipOval(
                         child: Image(
-                          image: AssetImage('assets/images/koder.png'),
+                          image: AssetImage('assets/images/app_logo.png'),
                           height: 100,
                           width: 100,
                           fit: BoxFit.cover,

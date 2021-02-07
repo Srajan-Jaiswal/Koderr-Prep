@@ -1,8 +1,8 @@
-import 'package:koderr/screens/doubt_assistant.dart';
-import 'package:koderr/screens/video_learning.dart';
+import 'package:koderr/screens/doubts.dart';
 import 'package:koderr/screens/practice_sets.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/painting.dart';
+import 'package:koderr/screens/video_learning.dart';
 import 'package:link/link.dart';
 import 'package:url_launcher/url_launcher.dart';
 
@@ -661,7 +661,7 @@ class _DashboardPageState extends State<DashboardPage> {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => DiscussionsPage())),
+                                      builder: (context) => Doubts())),
                               child: Container(
                                 padding: EdgeInsets.only(top: 20.0),
                                 child: Icon(

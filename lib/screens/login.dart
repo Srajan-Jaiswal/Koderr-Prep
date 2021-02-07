@@ -27,7 +27,6 @@ class _LoginPageState extends State<LoginPage> {
   bool isConnected = false;
   bool isLoading = false;
 
-  // logging state
   bool isLoggedIn = false;
 
   // google login credentials
@@ -436,7 +435,7 @@ class _LoginPageState extends State<LoginPage> {
                       children: <Widget>[
                         ClipOval(
                           child: Image(
-                            image: AssetImage('assets/images/koder.png'),
+                            image: AssetImage('assets/images/app_logo.png'),
                             height: 100,
                             width: 100,
                             fit: BoxFit.cover,
