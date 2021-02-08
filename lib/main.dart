@@ -23,7 +23,7 @@ class MyApp extends StatelessWidget {
         color: Colors.black,
       )),
       home: LoginPage(),
-      title: 'koderr',
+      title: 'koderr Prep',
       debugShowCheckedModeBanner: false,
       routes: {
         LoginPage.routeName: (context) => LoginPage(),

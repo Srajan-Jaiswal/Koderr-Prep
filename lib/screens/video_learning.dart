@@ -61,7 +61,7 @@ class _ExtrasPageState extends State<ExtrasPage> {
                   _channel.title,
                   style: TextStyle(
                     fontFamily: 'OpenSans',
-                    color: Colors.black,
+                    color: Colors.red,
                     fontSize: 20.0,
                     fontWeight: FontWeight.w700,
                   ),
@@ -71,7 +71,7 @@ class _ExtrasPageState extends State<ExtrasPage> {
                   '${_channel.subscriberCount} subscribers',
                   style: TextStyle(
                     fontFamily: 'OpenSans',
-                    color: Colors.black,
+                    color: Colors.red,
                     fontSize: 16.0,
                     fontWeight: FontWeight.w600,
                   ),

@@ -503,7 +503,119 @@ class _DashboardPageState extends State<DashboardPage> {
                           ),
                         ),
                       ),
-                      Container(
+                     
+                     
+
+
+ Container(
+                        padding:
+                            EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0),
+                        height: _height / 2.0,
+                        width: _width,
+                        child: Card(
+                          elevation: 2.0,
+                          child: Column(
+                            children: <Widget>[
+                              Stack(
+                                children: <Widget>[
+                                  ClipRRect(
+                                    borderRadius: new BorderRadius.only(
+                                      topLeft: Radius.circular(5.0),
+                                      topRight: Radius.circular(5.0),
+                                    ),
+                                    child: Image.asset(
+                                      'assets/images/flutterandroid.png',
+                                      fit: BoxFit.cover,
+                                      width: _width,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                              Expanded(
+                                child: Container(
+                                  padding: EdgeInsets.only(
+                                      top: 10.0, left: 15.0, right: 10.0),
+                                  child: Text(
+                                    'It gives the computer that makes it more similar to humans: The ability to learn',
+                                    style: TextStyle(
+                                        color: Colors.indigo,
+                                        fontWeight: FontWeight.w700,
+                                        letterSpacing: 0.8,
+                                        fontSize: 14.0),
+                                    overflow: TextOverflow.ellipsis,
+                                    maxLines: 1,
+                                    textScaleFactor: 1.0,
+                                  ),
+                                ),
+                              ),
+                              Expanded(
+                                child: Container(
+                                  padding: EdgeInsets.only(
+                                      top: 5.0, left: 15.0, right: 10.0),
+                                  child: Text(
+                                    'Machine learning is a method of data analysis that automates analytical model building. It is a branch of artificial intelligence based on the idea that systems can learn from data, identify patterns and make decisions with minimal human intervention',
+                                    style: TextStyle(
+                                        color: Colors.black45,
+                                        fontWeight: FontWeight.w400,
+                                        letterSpacing: 0.8,
+                                        fontSize: 12.0,
+                                        wordSpacing: 1.5),
+                                    overflow: TextOverflow.clip,
+                                    maxLines: 3,
+                                  ),
+                                ),
+                              ),
+                              ListTile(
+                                leading: CircleAvatar(
+                                  child: ClipOval(
+                                    child: Image.asset(
+                                      'assets/images/gfg.png',
+                                      fit: BoxFit.fill,
+                                      height: _height / 17,
+                                      width: _width / 8,
+                                    ),
+                                  ),
+                                ),
+                                title: Text(
+                                  'Android/iOS Development',
+                                  style: TextStyle(
+                                      color: Colors.black45,
+                                      fontSize: 14.0,
+                                      fontWeight: FontWeight.w700),
+                                  textAlign: TextAlign.left,
+                                ),
+                                subtitle: Text(
+                                  'Geeks for Geeks',
+                                  style: TextStyle(
+                                      color: Colors.green, fontSize: 10.0),
+                                  textAlign: TextAlign.left,
+                                ),
+                                trailing: InkWell(
+                                  onTap: () => launch(
+                                      'https://www.youtube.com/channel/UCwXdFgeE9KYzlDdR7TG9cMw'),
+                                  child: CircleAvatar(
+                                    backgroundColor: Colors.white,
+                                    child: ClipOval(
+                                      child: Image.asset(
+                                        'assets/images/google_logo.png',
+                                        fit: BoxFit.fill,
+                                        height: _height / 17,
+                                        width: _width / 8,
+                                      ),
+                                    ),
+                                  ),
+                                ),
+                              ),
+                            ],
+                          ),
+                        ),
+                      ),
+
+
+
+
+
+ Container(
                         padding:
                             EdgeInsets.only(left: 0.0, right: 0.0, top: 10.0),
                         height: _height / 2.0,
@@ -606,6 +718,36 @@ class _DashboardPageState extends State<DashboardPage> {
                           ),
                         ),
                       ),
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
                       Container(
                         margin: EdgeInsets.only(top: 20.0),
                         width: _width,

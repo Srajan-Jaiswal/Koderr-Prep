@@ -39,7 +39,7 @@ class _HomePageState extends State<HomePage> {
       context: context,
       type: AlertType.error,
       title: "Exit",
-      desc: "Do you want to exit the app ?",
+      //desc: "Do you want to exit the app ?",
       buttons: [
         DialogButton(
           child: Text(
@@ -49,8 +49,8 @@ class _HomePageState extends State<HomePage> {
           ),
           onPressed: () => Navigator.of(context).pop(false),
           gradient: LinearGradient(colors: [
-            Color(0xFF20BF55),
-            Color(0xFF01BAEF),
+            Color.fromRGBO(255, 0, 0, 1.0),
+            Color.fromRGBO(255, 0, 0, 1.0)
           ]),
         ),
         DialogButton(
@@ -61,8 +61,8 @@ class _HomePageState extends State<HomePage> {
           ),
           onPressed: () => SystemNavigator.pop(),
           gradient: LinearGradient(colors: [
-            Color.fromRGBO(116, 116, 191, 1.0),
-            Color.fromRGBO(52, 138, 199, 1.0)
+            Color.fromRGBO(255, 0, 0, 1.0),
+            Color.fromRGBO(255, 0, 0, 1.0)
           ]),
         )
       ],

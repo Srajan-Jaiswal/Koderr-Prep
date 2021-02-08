@@ -270,7 +270,7 @@ class _RelaxZonePageState extends State<RelaxZonePage> {
                           ),
                           trailing: InkWell(
                             onTap: () =>
-                                launch('https://www.indiatvnews.com/politics'),
+                                launch('https://news.google.com/search?q=Politics&hl=en-IN&gl=IN&ceid=IN%3Aen'),
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
                               child: ClipOval(
@@ -301,7 +301,7 @@ class _RelaxZonePageState extends State<RelaxZonePage> {
                           ),
                           trailing: InkWell(
                             onTap: () =>
-                                launch('https://www.aajtak.in/entertainment'),
+                                launch('https://news.google.com/search?q=Entertainment&hl=en-IN&gl=IN&ceid=IN%3Aen'),
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
                               child: ClipOval(
@@ -334,7 +334,7 @@ class _RelaxZonePageState extends State<RelaxZonePage> {
                           ),
                           trailing: InkWell(
                             onTap: () =>
-                                launch('https://www.businesstoday.in/'),
+                                launch('https://news.google.com/search?q=Business&hl=en-IN&gl=IN&ceid=IN%3Aen'),
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
                               child: ClipOval(
@@ -367,7 +367,7 @@ class _RelaxZonePageState extends State<RelaxZonePage> {
                           ),
                           trailing: InkWell(
                             onTap: () => launch(
-                                'https://indianexpress.com/section/sports/'),
+                                'https://news.google.com/search?q=sports%20news&hl=en-IN&gl=IN&ceid=IN%3Aen'),
                             child: CircleAvatar(
                               backgroundColor: Colors.white,
                               child: ClipOval(

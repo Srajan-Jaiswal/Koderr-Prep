@@ -209,7 +209,7 @@ class _AboutPageState extends State<AboutPage> {
             ),
             ClipOval(
               child: Image(
-                image: AssetImage('assets/images/koder.png'),
+                image: AssetImage('assets/images/app_logo.png'),
                 height: 120,
                 width: 120,
                 fit: BoxFit.cover,
@@ -218,7 +218,7 @@ class _AboutPageState extends State<AboutPage> {
             SizedBox(
               height: 30.0,
             ),
-            Text("Koderr",
+            Text("Koderr Prep",
                 style: TextStyle(
                     fontFamily: 'OpenSans',
                     color: Colors.black,
@@ -248,11 +248,12 @@ class _AboutPageState extends State<AboutPage> {
                   "In addition to those resources, here we provide best coding interview prep platforms for developer candidates."
                   "\n"
                   "\n"
-                  "                                                          -Koderr ",
+                  "                                                        -Koderr Prep ",
                   style: TextStyle(
                       fontFamily: 'OpenSans',
-                      color: Colors.black,
+                      color: Colors.black87,
                       fontSize: 16.0,
+                      fontWeight: FontWeight.w700,
                       fontStyle: FontStyle.normal),
                   textAlign: TextAlign.justify,
                 ),

@@ -42,6 +42,16 @@ class _LabTestPageState extends State<LabTestPage> {
         '                                     YouTube',
         'https://docs.google.com/document/d/1SM92efk8oDl8nyVw8NHPnbGexTS9W-1gmTEYfEurLWQ/edit',
         'assets/images/striver.jpg'),
+    LabTest(
+        'Techie Delight Interview Questions',
+        '                                        Techie Delight',
+        'https://www.techiedelight.com/huge-collection-of-array-interview-questions/',
+        'assets/images/techie_delight.png'),     
+    LabTest(
+        'Top 25 Interview Questions',
+        '                                        GeeksforGeeks',
+        'https://www.geeksforgeeks.org/top-25-interview-questions/',
+        'assets/images/top25.png'),       
   ];
 
   @override
