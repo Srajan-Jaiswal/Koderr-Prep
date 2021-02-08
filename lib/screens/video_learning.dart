@@ -4,14 +4,14 @@ import 'package:koderr/screens/video_page.dart';
 import 'package:koderr/services/api_service.dart';
 import 'package:flutter/material.dart';
 
-class ExtrasPage extends StatefulWidget {
+class VideoLearning extends StatefulWidget {
   static const String routeName = '/extras-page';
 
   @override
-  _ExtrasPageState createState() => _ExtrasPageState();
+  _VideoLearningState createState() => _VideoLearningState();
 }
 
-class _ExtrasPageState extends State<ExtrasPage> {
+class _VideoLearningState extends State<VideoLearning> {
   Channel _channel;
   bool _isLoading = false;
 

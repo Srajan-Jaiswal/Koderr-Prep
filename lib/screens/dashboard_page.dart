@@ -831,7 +831,7 @@ class _DashboardPageState extends State<DashboardPage> {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => ExtrasPage())),
+                                      builder: (context) => VideoLearning())),
                               child: Container(
                                 padding: EdgeInsets.only(top: 20.0),
                                 child: Icon(
@@ -859,7 +859,7 @@ class _DashboardPageState extends State<DashboardPage> {
                               onTap: () => Navigator.push(
                                   context,
                                   MaterialPageRoute(
-                                      builder: (context) => LabTestPage())),
+                                      builder: (context) => PracticeSetPage())),
                               child: Container(
                                 padding: EdgeInsets.only(top: 20.0),
                                 child: Icon(

@@ -2,52 +2,52 @@ import 'package:koderr/widgets/practice_sets_listTile.dart';
 import 'package:flutter/material.dart';
 import 'package:search_page/search_page.dart';
 
-class LabTest {
+class PracticeSet {
   final String imageUrl;
   final String labName;
   final String labDescription;
   final String webUrl;
-  LabTest(this.labName, this.labDescription, this.webUrl, this.imageUrl);
+  PracticeSet(this.labName, this.labDescription, this.webUrl, this.imageUrl);
 }
 
-class LabTestPage extends StatefulWidget {
+class PracticeSetPage extends StatefulWidget {
   @override
-  _LabTestPageState createState() => _LabTestPageState();
+  _PracticeSetPageState createState() => _PracticeSetPageState();
 }
 
-class _LabTestPageState extends State<LabTestPage> {
-  static List<LabTest> name = [
-    LabTest(
+class _PracticeSetPageState extends State<PracticeSetPage> {
+  static List<PracticeSet> name = [
+    PracticeSet(
         'Must Do Interview Problems',
         '                                        GFG',
         'https://www.geeksforgeeks.org/must-do-coding-questions-for-companies-like-amazon-microsoft-adobe/',
         'assets/images/gfg.png'),
-    LabTest(
+    PracticeSet(
         'Important Leetcode Problems',
         '                                      Leetcode',
         'https://github.com/Srajan-Jaiswal/Leetcode-Problems',
         'assets/images/leetcode.png'),
-    LabTest(
+    PracticeSet(
         'Competetive Programming Sheet',
         '                                    Codeforces',
         'https://a2oj.com/ladders',
         'assets/images/cp.jpg'),
-    LabTest(
+    PracticeSet(
         'Love Babbar DSA Sheet',
         '                                        YouTube',
         'https://drive.google.com/file/d/1FMdN_OCfOI0iAeDlqswCiC2DZzD4nPsb/view',
         'assets/images/DSA.jpg'),
-    LabTest(
+    PracticeSet(
         'Striver SDE Sheet',
         '                                     YouTube',
         'https://docs.google.com/document/d/1SM92efk8oDl8nyVw8NHPnbGexTS9W-1gmTEYfEurLWQ/edit',
         'assets/images/striver.jpg'),
-    LabTest(
+    PracticeSet(
         'Techie Delight Interview Questions',
         '                                        Techie Delight',
         'https://www.techiedelight.com/huge-collection-of-array-interview-questions/',
         'assets/images/techie_delight.png'),     
-    LabTest(
+    PracticeSet(
         'Top 25 Interview Questions',
         '                                        GeeksforGeeks',
         'https://www.geeksforgeeks.org/top-25-interview-questions/',
@@ -72,12 +72,12 @@ class _LabTestPageState extends State<LabTestPage> {
       body: ListView.builder(
           itemCount: name.length,
           itemBuilder: (context, index) {
-            final LabTest labTest = name[index];
-            return IndLabTestTile(
-              labTitle: labTest.labName,
-              labDescription: labTest.labDescription,
-              webUrl: labTest.webUrl,
-              imageUrl: labTest.imageUrl,
+            final PracticeSet practiceset = name[index];
+            return PracticeSetTile(
+              sheetTitle: practiceset.labName,
+              sheetDescription: practiceset.labDescription,
+              webUrl: practiceset.webUrl,
+              imageUrl: practiceset.imageUrl,
             );
           }),
       floatingActionButton: FloatingActionButton(
@@ -85,7 +85,7 @@ class _LabTestPageState extends State<LabTestPage> {
         tooltip: 'Search Practice Sets',
         onPressed: () => showSearch(
           context: context,
-          delegate: SearchPage<LabTest>(
+          delegate: SearchPage<PracticeSet>(
             items: name,
             searchLabel: 'Search Practice Sets',
             suggestion: Center(
@@ -94,17 +94,17 @@ class _LabTestPageState extends State<LabTestPage> {
             failure: Center(
               child: Text('No set found :('),
             ),
-            filter: (labtest) => [
-              labtest.labName,
-              labtest.labDescription,
-              labtest.webUrl,
-              labtest.imageUrl
+            filter: (practiceset) => [
+              practiceset.labName,
+              practiceset.labDescription,
+              practiceset.webUrl,
+              practiceset.imageUrl
             ],
-            builder: (labtest) => IndLabTestTile(
-              labTitle: labtest.labName,
-              labDescription: labtest.labDescription,
-              webUrl: labtest.webUrl,
-              imageUrl: labtest.imageUrl,
+            builder: (practiceset) => PracticeSetTile(
+              sheetTitle: practiceset.labName,
+              sheetDescription: practiceset.labDescription,
+              webUrl: practiceset.webUrl,
+              imageUrl: practiceset.imageUrl,
             ),
           ),
         ),

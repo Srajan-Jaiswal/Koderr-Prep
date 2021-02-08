@@ -3,16 +3,16 @@ import 'package:flutter/material.dart';
 
 import 'package:url_launcher/url_launcher.dart';
 
-class IndLabTestTile extends StatelessWidget {
-  final String labTitle;
-  final String labDescription;
+class PracticeSetTile extends StatelessWidget {
+  final String sheetTitle;
+  final String sheetDescription;
   final String imageUrl;
   final String webUrl;
 
-  IndLabTestTile({
+  PracticeSetTile({
     @required this.imageUrl,
-    @required this.labTitle,
-    @required this.labDescription,
+    @required this.sheetTitle,
+    @required this.sheetDescription,
     @required this.webUrl,
   });
 
@@ -48,7 +48,7 @@ class IndLabTestTile extends StatelessWidget {
                     alignment: Alignment.centerLeft,
                     child: Center(
                       child: Text(
-                        labTitle,
+                        sheetTitle,
                         textAlign: TextAlign.justify,
                         style: TextStyle(
                             fontFamily: 'OpenSans',
@@ -77,7 +77,7 @@ class IndLabTestTile extends StatelessWidget {
                 child: Container(
                   alignment: Alignment.centerLeft,
                   child: Text(
-                    labDescription,
+                    sheetDescription,
                     style: TextStyle(
                         fontFamily: 'OpenSans', color: Colors.white),
                     textAlign: TextAlign.justify,
